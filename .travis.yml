@@ -16,8 +16,9 @@ before_deploy: grunt dist
 deploy:
   - provider: releases
     api_key:
+      secure: BYfZhMuHQE4caZSTEavDaSbW4GkY/KXOg0Xym34USDo0zn6BKSEdqL0VBWq74vOQb3+uvELkf2JzBcYtiL4LMnBMm2FTT1HxyHCK/Wz2Try/dhsBpA4c9aN274oBuNXmtPUGE1q+pezXL7DVZwF+4qqhqK6rTtd1Hj43LvmzEZYaBW/WW/9cS3J8hVZGZCnDx5sK31vRGTkwzNwcS1dJQhkXOxeQBD0Re2B2RYKnpUa6e0RaJsgdDy6fEur1z7+GGe0jsUBOPX/xApQDZ0vnlXim1WVCWRoUSWJ/NROMHJRUiDZxDBQEL9k0XQRD3kpPq2njtZnm6UC9fqTFabvXdV1U1HplmguaLJMGhSnMiPYIzTk0XT3CoDQRD2HeBo6y9mhwXcnpx41eZ/7GT06y6Pqp3hylABj8zJ8k5ATCeXXw9pFNhEUBPZLEWUTRmBSb74ym+jnea+vSfFtGeA4gpPnndifXAqEeZ0nA7nAC/6DTEvTCOSi5PsZG+PUdkfzQkLx919gunRtnp17SymE0sqydvTEAt/9x6e8KcEyBtbt2wv6eQKEd9e5F0I31T0ZU5LgoPNc0xAe40lx+A1gRFeXsl47LoWEGtZPyd4RARFvekmuAfnJoSXbaVBU5pZPLXbv8mnlE1e7OZyfOSARz7GgBTpHPx6N+YKRwVuh+TAo=
     skip_cleanup: true
-    file: date-ago.zip
+    file: clippings-date-ago.zip
     on:
       repo: clippings/date-ago
       tags: true
@@ -25,6 +26,7 @@ deploy:
     email: ikerin@gmail.com
     skip_cleanup: true
     api_key:
+      secure: "NzA2TR4nu0r441IbngIcMpWkIigO6NrEcAgxJJ9N6c3j6xpjMBP2H8Q0gCae89dDS2P+yjh1EsxNrIPwixNZ2t3Y7I4FikwBz1nzgrA5QM9Rrz3S0LZ4kOqDERrR30m4ZhxoyeQuoCkUJuY9XE8sZIkv9oQDzNpYt/h9a17c99VqRJc00kN9+ddgvdcSRZIO2w9EBk+vfMb2OyR4pWs2GrJKXK9MyPmLDj/ZZzJXBRSu+wkZZ19RV+BvnPcgj2FMBL76eblZCzLRlAjRR266foPRHe9NdTPbf7DlNylOKIM62dpvi2qMI6Pvok8GX+TS52kDCNNZ0goZGpZZ8L6Y2EIn6NP/rqN1ouQFDZjUTke/ag+FBYILh66pa5XUcjXGpLie2+aL3zk1lkhZdebdog5vvuBN6/xiM6vgLQRzyVltpA9f1hxFH/j5lQdCq/uNIDtOOv+wL4lUGeR1GjEifEsq9zEzp4j1JB9fFQG2rxZluDk8xeFpcVufCDHWC9vlOY5izcFp1bb9DtUyLCt5KK8CSg8IaKV5ymzpBTQvERNbXvdpBnbdhkoZHbCOP/X5z0lH4oJrUaYiAUnNTLTS+aNwMJE3KPiiU4XIF+orHEZZkixa1Ok56Q0g0CHCDtl82FMJIQqplAVo71Y6Rij6kmLF9uJydL8r6tuKSvJ5af4="
     on:
       repo: clippings/date-ago
       tags: true

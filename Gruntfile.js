@@ -43,19 +43,10 @@ module.exports = function (grunt) {
             }
         },
 
-        concat: {
-            options: {
-                sourceMap: true,
-                stripBanners: true,
-                banner: '// LICENSE: <%= pkg.license %>\n// <%= pkg.homepage %>\n\n var DateAgo = (function ($) {\n\n\'use strict\'\n\n',
-                footer: '\nreturn DateAgo\n\n})(jQuery)',
-                process: function (src) {
-                    return src.replace('\'use strict\'', '')
-                }
-            },
-            js: {
-                src: 'js/src/*.js',
-                dest: 'dist/js/<%= pkg.name %>.js'
+        copy: {
+            main: {
+                src: 'js/src/DateAgo.js',
+                dest: 'dist/js/<%= pkg.name %>.js',
             }
         },
 
@@ -75,17 +66,16 @@ module.exports = function (grunt) {
             options: {
                 mangle: true,
                 sourceMap: true,
-                sourceMapIn: 'dist/js/<%= pkg.name %>.js.map',
                 preserveComments: 'some'
             },
             core: {
-                src: '<%= concat.js.dest %>',
+                src: '<%= copy.main.dest %>',
                 dest: 'dist/js/<%= pkg.name %>.min.js'
             }
         }
     })
 
-    grunt.registerTask('js', ['concat', 'uglify'])
+    grunt.registerTask('js', ['copy', 'uglify'])
     grunt.registerTask('test', ['eslint', 'jscs', 'qunit'])
     grunt.registerTask('dist', ['default', 'compress'])
     grunt.registerTask('default', ['js'])
