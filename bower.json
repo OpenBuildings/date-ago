@@ -1,11 +1,11 @@
 {
   "name": "date-ago",
   "homepage": "https://clippings/clippings/date-ago",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "authors": [
     "Ivan Kerin <ikerin@gmail.com>"
   ],
-  "description": "Display "date ago" dynamically with javascript",
+  "description": "Display 'date ago' dynamically with javascript",
   "main": [
     "js/date-ago.min.js",
     "sass/date-ago.sass"
