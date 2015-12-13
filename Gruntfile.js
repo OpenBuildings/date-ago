@@ -46,7 +46,7 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 src: 'js/src/DateAgo.js',
-                dest: 'dist/js/<%= pkg.name %>.js',
+                dest: 'dist/js/<%= pkg.name %>.js'
             }
         },
 
