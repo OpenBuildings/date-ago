@@ -2,7 +2,6 @@ Date Ago
 ========
 
 [![Build Status](https://travis-ci.org/clippings/date-ago.svg?branch=master)](https://travis-ci.org/clippings/date-ago)
-[![Codacy Badge](https://api.codacy.com/project/badge/8a76e0f9ec414ae79aca59bd9f10e24a)](https://www.codacy.com/app/clippings/date-ago)
 [![Dependency Status](https://david-dm.org/clippings/date-ago.svg)](https://david-dm.org/clippings/date-ago)
 [![devDependency Status](https://david-dm.org/clippings/date-ago/dev-status.svg)](https://david-dm.org/clippings/date-ago#info=devDependencies)
 
