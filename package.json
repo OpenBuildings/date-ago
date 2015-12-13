@@ -1,0 +1,39 @@
+{
+  "name": "clippings-date-ago",
+  "license": "BSD-3-Clause",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "^1.7, ^2.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clippings/date-ago.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clippings/date-ago/issues"
+  },
+  "main": "dist/js/date-ago",
+  "jspm": {
+    "format": "global",
+    "shim": {
+      "dist/js/date-ago": [
+        "jquery"
+      ]
+    }
+  },
+  "homepage": "https://github.com/clippings/date-ago",
+  "devDependencies": {
+    "codeclimate-test-reporter": "^0.1.0",
+    "grunt": "^0.4.1",
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-eslint": "^17.1.0",
+    "grunt-jscs": "~1.8.0",
+    "grunt-qunit-istanbul": "^0.5.0",
+    "load-grunt-tasks": "^3.2.0",
+    "qunitjs": "^1.19.0"
+  }
+}

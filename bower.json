@@ -1,0 +1,30 @@
+{
+  "name": "date-ago",
+  "homepage": "https://clippings/clippings/date-ago",
+  "version": "0.0.1",
+  "authors": [
+    "Ivan Kerin <ikerin@gmail.com>"
+  ],
+  "description": "Display "date ago" dynamically with javascript",
+  "main": [
+    "js/date-ago.min.js",
+    "sass/date-ago.sass"
+  ],
+  "moduleType": "globals",
+  "keywords": [
+  ],
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "docs",
+    "build",
+    ".sass-cache",
+    "Gruntfile.js",
+    "js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.7.0"
+  }
+}

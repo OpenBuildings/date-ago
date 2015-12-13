@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Date Ago Tests</title>
+
+  <link type="text/css" rel="stylesheet" href="../../node_modules/qunitjs/qunit/qunit.css">
+</head>
+<body>
+
+<div id="qunit"></div>
+<div id="qunit-fixture">
+    <div id="static" title="2015-12-01">
+        text
+    </div>
+    <div id="updated" title="2015-12-01" data-update="date-ago">
+        text
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../../node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../../node_modules/qunitjs/qunit/qunit.js"></script>
+
+<!-- Sources -->
+<script type="text/javascript" src='../src/DateAgo.js'></script>
+
+<!-- Unit tests -->
+<script type="text/javascript" src='unit/DateAgoTest.js'></script>
+
+</body>
+</html>

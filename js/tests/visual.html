@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Date Ago Visual Tests</title>
+</head>
+<body>
+
+<div id="qunit"></div>
+<div id="qunit-fixture">
+
+    <p
+     id="now"
+     title="2015-12-01"
+     data-update="date-ago">
+        Today
+    </p>
+
+    <p
+     id="yesterday"
+     title="2015-12-01"
+     data-update="date-ago">
+        Today
+    </p>
+
+    <p
+     id="last-month"
+     title="2015-12-01"
+     data-update="date-ago">
+        Today
+    </p>
+
+</div>
+
+<script type="text/javascript">
+    var date = new Date()
+    document.getElementById('now').title = date.toUTCString()
+
+    date.setDate(date.getDate() - 1)
+    document.getElementById('yesterday').title = date.toUTCString()
+
+    date.setDate(date.getDate() - 30)
+    document.getElementById('last-month').title = date.toUTCString()
+</script>
+
+<script type="text/javascript" src="../../node_modules/jquery/dist/jquery.js"></script>
+
+<!-- Sources -->
+<script type="text/javascript" src='../src/DateAgo.js'></script>
+
+</body>
+</html>

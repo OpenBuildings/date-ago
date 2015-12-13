@@ -1,0 +1,30 @@
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm install -g npm@'>=2.13.5'
+  - npm install -g grunt-cli
+
+after_script:
+  - grunt codacy
+
+before_deploy: grunt dist
+
+deploy:
+  - provider: releases
+    api_key:
+    skip_cleanup: true
+    file: date-ago.zip
+    on:
+      repo: clippings/date-ago
+      tags: true
+  - provider: npm
+    email: ikerin@gmail.com
+    skip_cleanup: true
+    api_key:
+    on:
+      repo: clippings/date-ago
+      tags: true
